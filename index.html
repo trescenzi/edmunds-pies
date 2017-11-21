@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>PIES!!!</title>
+    <script>
+      setInterval(() => {
+        if (pie.classList.contains('large')) {
+          pie.classList.remove('large');
+        } else {
+          pie.classList.add('large');
+        }
+      }, 1000)
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="vcenter">
+        Edmu(o?)nd's Famous Pies!
+      </div>
+    </div>
+
+    <marquee 
+           scrollamount="10" 
+           bgcolor="orange"
+           height="40px">
+    Pies! Pies! Pies!
+    </marquee>
+
+    <img id="pie" src="https://www.misskatecuttables.com/uploads/shopping_cart/9440/large_fall-pie.png" />
+
+    <p>
+    Get your pies here! Only the <strong>BEST!!!</strong>
+    </p>
+    <p>
+    Open from 4am to 1pm everyday. <strong>Early bird special!!!</strong>
+    </p>
+  </body>
+</html>
