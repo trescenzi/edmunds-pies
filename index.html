@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>PIES!!!</title>
-    <script>
+    <script type="text/javascript">
       setInterval(() => {
         if (pie.classList.contains('large')) {
           pie.classList.remove('large');
@@ -10,6 +10,34 @@
         }
       }, 1000)
     </script>
+    <style>
+      marquee {
+        font-size: 40px;
+      }
+
+      .header {
+        display: flex;
+        height: 100px;
+        background-color: yellow;
+        font-size: 30px;
+        color: red;
+      }
+
+      .vcenter {
+        align-self: center;
+        margin: 0 auto;
+      }
+
+      #pie {
+        transition: transform 1s;
+        height: 300px;
+        width: 300px;
+      }
+
+      #pie.large {
+        transform: scale(2);
+      }
+    </style>
   </head>
   <body>
     <div class="header">
